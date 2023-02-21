@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center"> Calculator</h1>
+    <div align="center">value 1 <input type="text" id="d1"><br><br>
+        value 2 <input type="text" id="d2"><br><br>
+        <button type="button" onclick="sum()">Sum</button>
+        <button type="button" onclick="addi()">Addition</button><br><br>
+        <button type="button" onclick="multi()">Multiply</button>
+        <button type="button" onclick="div()">Devide</button><br>
+    </div>
+<h1 id="d3"></h1>
+</body>
+<script>
+   
+    function sum(){
+      var a= parseInt(document.getElementById("d1").value);
+    var b= parseInt(document.getElementById("d2").value);
+       document.getElementById("d3").innerHTML=a+b;
+    };
+    function addi(){
+        var a= parseInt(document.getElementById("d1").value);
+    var b= parseInt(document.getElementById("d2").value);
+       document.getElementById("d3").innerHTML=a-b;
+    };
+    function multi(){
+        var a= parseInt(document.getElementById("d1").value);
+    var b= parseInt(document.getElementById("d2").value);
+       document.getElementById("d3").innerHTML=a*b;
+    };
+    function div(){
+        var a= parseInt(document.getElementById("d1").value);
+    var b= parseInt(document.getElementById("d2").value);
+       document.getElementById("d3").innerHTML=a/b;
+    }
+</script>
+
+</html>
